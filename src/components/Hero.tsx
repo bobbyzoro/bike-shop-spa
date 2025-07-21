@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ imageUrl, title, description, buttonText, b
     <Box
       sx={{
         height: '70vh',
-        backgroundImage: `url(${imageUrl})`,
+        backgroundImage: `url(${import.meta.env.BASE_URL}${imageUrl})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

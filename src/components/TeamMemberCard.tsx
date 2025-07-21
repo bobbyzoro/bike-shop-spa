@@ -12,7 +12,7 @@ interface TeamMemberCardProps {
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, description, image }) => {
   return (
     <Card sx={{ maxWidth: 345, margin: 'auto', boxShadow: 3 }}>
-      <CardMedia component="img" height="280" image={image} alt={name} />
+      <CardMedia component="img" height="280" image={`${import.meta.env.BASE_URL}${image}`} alt={name} />
       <CardContent>
         <Typography variant="h6" fontWeight="bold">
           {name}

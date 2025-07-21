@@ -11,7 +11,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl }) => {
   return (
     <Card sx={{ maxWidth: 345, mx: 'auto', boxShadow: 3 }}>
-      <CardMedia component="img" height="180" image={imageUrl} alt={title} />
+      <CardMedia component="img" height="180" image={`${import.meta.env.BASE_URL}${imageUrl}`} alt={title} />
       <CardContent>
         <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
           {title}

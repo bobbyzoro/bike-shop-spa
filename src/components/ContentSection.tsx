@@ -35,7 +35,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
       {/* Immagine */}
       <Box
         component="img"
-        src={imageUrl}
+        src={`${import.meta.env.BASE_URL}${imageUrl}`}
         alt={title}
         sx={{
           width: { xs: '100%', md: '50%' },

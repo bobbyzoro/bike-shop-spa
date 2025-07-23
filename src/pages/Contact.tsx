@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
 
       {/* Hero */}
       <Hero
-        imageUrl="/contact.jpg"
+        imageUrl="/hero.webp"
         title="Siamo qui per aiutarti"
         description="Hai bisogno di informazioni o vuoi prenotare un intervento? Contattaci subito."
         buttonText="Scrivici ora"

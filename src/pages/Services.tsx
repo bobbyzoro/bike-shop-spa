@@ -10,31 +10,31 @@ const services = [
         title: 'Riparazione Biciclette',
         description:
             'Sostituzione camere d’aria, freni, regolazione cambio, centratura ruote e altro ancora. Servizio rapido e professionale.',
-        imageUrl: '/services/bike-repair.jpg',
+        imageUrl: '/services/bici.webp',
     },
     {
         title: 'Riparazione Motorini',
         description:
             'Diagnostica elettronica, cambio olio, sostituzione freni e molto altro per il tuo scooter o motorino.',
-        imageUrl: '/services/scooter-repair.jpg',
+        imageUrl: '/services/moto.webp',
     },
     {
         title: 'Manutenzione Periodica',
         description:
             'Offriamo piani di manutenzione preventiva per garantire affidabilità e durata nel tempo del tuo mezzo.',
-        imageUrl: '/services/maintenance.jpg',
+        imageUrl: '/services/manutenzione.webp',
     },
     {
         title: 'Montaggio Accessori',
         description:
             'Installiamo portapacchi, luci, cavalletti, antifurti e altri accessori per bici e scooter.',
-        imageUrl: '/services/accessories.jpg',
+        imageUrl: '/services/montaggio.webp',
     },
     {
         title: 'Consulenza tecnica',
         description:
             'Non sai che pezzo ti serve? Ti aiutiamo a scegliere e ordinare il componente giusto per le tue esigenze.',
-        imageUrl: '/services/consulting.jpg',
+        imageUrl: '/services/consulenza.webp',
     },
 ];
 
@@ -49,11 +49,11 @@ const Services: React.FC = () => {
 
             {/* Hero */}
             <Hero
-                imageUrl="/hero-home-min.png"
+                imageUrl="/hero.webp"
                 title="I nostri servizi"
                 description="Offriamo riparazioni, manutenzione e consulenza per biciclette e motorini."
                 buttonText="Prenota una Riparazione"
-                buttonLink="/contatti"
+                buttonLink="contatti"
             />
 
             {/* Servizi */}

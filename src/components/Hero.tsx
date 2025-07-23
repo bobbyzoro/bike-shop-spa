@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ imageUrl, title, description, buttonText, b
           variant="contained"
           color="primary"
           sx={{ fontSize: '1.2rem' }}
-          href={buttonLink} // Link che il bottone apre
+          href={`${import.meta.env.BASE_URL}${buttonLink}`} // Link che il bottone apre
         >
           {buttonText}
         </Button>

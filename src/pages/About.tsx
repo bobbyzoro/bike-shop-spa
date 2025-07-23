@@ -11,19 +11,19 @@ const teamMembers = [
     name: 'Luca Bianchi',
     role: 'Meccanico esperto',
     description: '20 anni di esperienza in riparazioni di motorini e biciclette da corsa.',
-    image: '/luca.jpg',
+    image: '/team/luca.webp',
   },
   {
     name: 'Sara Verdi',
     role: 'Accettazione & Ricambi',
     description: 'Gestisce l’accoglienza clienti e il magazzino ricambi con grande precisione.',
-    image: '/sara.jpg',
+    image: '/team/sara.webp',
   },
   {
     name: 'Mario Rossi',
     role: 'Tecnico Elettrico',
     description: 'Specializzato in impianti elettrici e diagnosi elettroniche.',
-    image: '/mario.jpg',
+    image: '/team/mario.webp',
   },
 ];
 
@@ -35,7 +35,7 @@ const About: React.FC = () => {
 
       {/* Sezione Hero */}
       <Hero
-        imageUrl="/hero-home-min.png" // URL dell'immagine di sfondo o path relativo
+        imageUrl="/hero.webp" // URL dell'immagine di sfondo o path relativo
         title="Esperti al tuo servizio"
         description="Ogni membro del nostro team è dedicato a portare competenza, esperienza e soluzioni per ogni tua esigenza."
       />

@@ -1,10 +1,11 @@
 // src/pages/About.tsx
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import TeamMemberCard from '../components/TeamMemberCard';
 import CompanyValues from '../components/CompanyValues';
 import { Title, Meta } from 'react-head';
 import Hero from '../components/Hero';
+import SectionIntro from '../components/SectionIntro';
 
 const teamMembers = [
   {
@@ -37,16 +38,16 @@ const About: React.FC = () => {
       <Hero
         imageUrl="/hero.webp" // URL dell'immagine di sfondo o path relativo
         title="Esperti al tuo servizio"
-        description="Ogni membro del nostro team è dedicato a portare competenza, esperienza e soluzioni per ogni tua esigenza."
+        description="Un team dedito nel portare soluzioni per ogni tua esigenza."
       />
 
-      <Box sx={{ py: 8 }}>
+      <SectionIntro
+        title="Il nostro team"
+        text="Una squadra affiatata, con anni di esperienza e una vera passione per le due ruote."
+      />
+
+      <Box>
         <Container maxWidth="lg">
-
-          <Typography variant="h5" fontWeight="bold" mb={4} sx={{ mt: 4, textAlign: 'center' }}>
-            Il nostro Team
-          </Typography>
-
           {/* Team */}
           <Box
             sx={{

@@ -4,6 +4,7 @@ import { Container, Box, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
+import SectionIntro from '../components/SectionIntro';
 
 const services = [
     {
@@ -53,11 +54,16 @@ const Services: React.FC = () => {
                 title="I nostri servizi"
                 description="Offriamo riparazioni, manutenzione e consulenza per biciclette e motorini."
                 buttonText="Prenota una Riparazione"
-                buttonLink="contatti"
+                buttonLink="/contatti"
+            />
+
+            <SectionIntro
+                title="I nostri servizi"
+                text="Soluzioni complete per la manutenzione, la riparazione e l'ottimizzazione del tuo mezzo."
             />
 
             {/* Servizi */}
-            <Box sx={{ py: 6 }}>
+            <Box>
                 <Container maxWidth="lg">
                     <Box
                         sx={{

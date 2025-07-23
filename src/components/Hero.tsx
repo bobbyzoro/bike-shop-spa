@@ -1,6 +1,7 @@
 // src/components/Hero.tsx
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 // Definisco un'interfaccia per le props del componente Hero
 interface HeroProps {
@@ -33,14 +34,15 @@ const Hero: React.FC<HeroProps> = ({ imageUrl, title, description, buttonText, b
       <Typography variant="h4" sx={{ marginBottom: 4, mx: 8 }}>
         {description}
       </Typography>
-      
+
       {/* Mostra il pulsante solo se il buttonLink è presente */}
       {buttonLink && (
         <Button
           variant="contained"
           color="primary"
           sx={{ fontSize: '1.2rem' }}
-          href={`${import.meta.env.BASE_URL}${buttonLink}`} // Link che il bottone apre
+          component={RouterLink}
+          to={buttonLink}
         >
           {buttonText}
         </Button>

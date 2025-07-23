@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
+import { Link as RouterLink } from 'react-router-dom';
 
 interface ContentSectionProps {
   imageUrl: string;
@@ -130,7 +131,8 @@ const ContentSection: React.FC<ContentSectionProps> = ({
           variant="contained"
           color="primary"
           size="large"
-          href={`${import.meta.env.BASE_URL}${ctaUrl}`}
+          component={RouterLink}
+          to={ctaUrl}
         >
           {ctaLabel}
         </Button>
